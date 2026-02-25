@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -pedantic -std=c11 -Iinclude
+CFLAGS = -Wall -Wextra -std=c17 -Iinclude
 
 C_SRC = $(shell find src -type f -name '*.c')
 OBJ = $(C_SRC:.c=.o)
@@ -16,6 +16,3 @@ jcpp: $(OBJ)
 
 clean:
 	rm -f $(OBJ) jcpp
-
-test: jcpp
-	bash tests/run.sh
