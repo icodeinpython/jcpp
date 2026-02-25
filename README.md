@@ -64,4 +64,4 @@ jcpp/
 
 ## Licence
 
-MIT
+GPL
